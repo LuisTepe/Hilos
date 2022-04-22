@@ -29,7 +29,6 @@ public class Threads implements Runnable {
             aux = factorial(primNum);
 
             String name = Thread.currentThread().getName();
-            //System.out.println("Current thread: " + name + " ~ " + Lista.getLista());
 
             System.out.println("Num dado: " + primNum + ". Factorial: " + aux + " ~ From thread: " + name);
 
@@ -37,14 +36,6 @@ public class Threads implements Runnable {
                 break;
             }
             i++;
-/*
-            try {
-                //descansar medio segundo
-                Thread.sleep(500);
-            } catch (InterruptedException ex) {
-                LOGGER.severe(ex.getMessage());
-            }
-*/
         }
     }
 

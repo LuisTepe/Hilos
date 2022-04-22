@@ -16,17 +16,17 @@ public class Multithreading {
         Lista list = new Lista();
         Threads r = new Threads();
 
-        //El mismo obj se comparte por 2 threads
+        //MultiThreads
         Thread t1 = new Thread(r);
         Thread t2 = new Thread(r);
 
-        //Pedir cantidad de numeros
-        System.out.println("Ingrese la cantidad de numeros a sacar factorial: ");
+        //Cantidad de numeros
+        System.out.println("Ingrese la cantidad de numeros: ");
         int cantNum = entrada.nextInt();
 
-        //Llenar lista
+        //Llena la lista
         for (int i = 1; i < cantNum+1; i++) {
-            System.out.println("Introduzca num " + i + ": ");
+            System.out.println("Introduzca el num " + i + ": ");
             list.setLista(entrada.nextInt());
         }
 

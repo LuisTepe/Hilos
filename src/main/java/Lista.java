@@ -3,33 +3,33 @@ import java.util.Map;
 
 public class Lista {
 
-    public static Map<Integer, Integer> lista = new HashMap<Integer, Integer>();;
+    public static Map<Integer, Integer> list = new HashMap<Integer, Integer>();;
     static int i = 0;
     static int j = 0;
-    static int indicej;
+    static int index;
 
     public Lista() {
 
     }
 
     public static void setLista(int num) {
-        lista.put(i, num);
-        System.out.println(lista.get(i));
+        list.put(i, num);
+        System.out.println(list.get(i));
         i += 1;
     }
 
     public static int getLista() {
         try {
-            indicej = lista.get(j);
+            index = list.get(j);
             j += 1;
         } catch (IndexOutOfBoundsException ioobe){
 
         }
-        return indicej;
+        return index;
     }
 
     public static int size(){
-        return lista.size();
+        return list.size();
     }
 
 }
